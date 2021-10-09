@@ -1,0 +1,267 @@
+body{
+    margin: 5px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "header header header"
+    "section section foto02"
+    "misProyectos misProyectos misProyectos"
+    "proyecto01 proyecto02 proyecto02"
+    "proyecto03 proyecto04 proyecto05"
+    "footer footer footer";
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: rgba(210, 195, 176, 0.85);
+}
+
+.frase{
+    padding-left: 25px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.foto02{
+    width: 591px;
+    height: 710.51px;
+    padding-top: 180px;
+}
+
+.section{
+    grid-area: section;
+}
+
+.foto02{
+    grid-area: foto02;
+    transform: translate(0px, 10px);
+}
+
+.misProyectos{
+    grid-area: misProyectos;
+    background-color: #D2C3B0;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+.brand{
+    padding-right: 25px;
+}
+
+.social{
+    padding-right: 25px;
+}
+
+.ux{
+    padding-right: 25px;
+}
+
+.ui{
+    padding-right: 25px;
+}
+
+.proyecto01{
+    grid-area: proyecto01;
+    justify-self: stretch;
+    align-self: start;
+}
+
+.proyecto02{
+    grid-area: proyecto02;
+    justify-self: stretch;
+    align-self: start;
+    width: 870px;
+    height: 420px;
+    transition: 3s;
+}
+
+.proyecto02:hover{
+    width: 900px;
+    height: 450px;
+}
+
+.proyecto03{
+    grid-area: proyecto03;
+    justify-self: stretch;
+    align-self: start;
+    width: 435px;
+    height: 434px;
+    transition: 3s;
+}
+
+.proyecto03:hover{
+    width: 465px;
+    height: 464px;
+}
+
+.proyecto04{
+    grid-area: proyecto04;
+    justify-self: stretch;
+    align-self: start;
+}
+
+.proyecto05{
+    grid-area: proyecto05;
+    justify-self: stretch;
+    align-self: start;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    width: 1444px;
+    height: 157px;
+    background-image: linear-gradient(to top, #B0A597, white);
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    padding-right: 300px;
+}
+
+li{
+    display: inline-block;
+    padding: 40px;
+}
+
+a:hover{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #514E4D;
+    font-style: normal;
+    font-size: 18px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #B0A597;
+    font-style: italic;
+    font-size: 22px;
+    padding-top: 180px;
+    padding-left: 25px;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-style: italic;
+    font-size: 20px;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #514E4D;
+    font-style: normal;
+    Font-style: Italic;
+    Font-size: 16px;
+    Width: 539px;
+    padding-left: 25px;
+}
+
+.logoKyara{
+    width: 102px;
+    height: 102px;
+    padding: 20px;
+    padding-right: 300px;
+}
+
+#ig{
+    padding: 40px;
+    color: #514E4D;
+}
+
+#link{
+    padding: 40px;
+    color: #514E4D;
+}
+
+#behance{
+    padding: 40px;
+    color: #514E4D;
+}
+
+img{
+    width: 100%;
+}
+
+@media (min-width: 320px){
+    .contenedor{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "header"
+        "section"
+        "foto02"
+        "misProyectos"
+        "proyecto01"
+        "proyecto02"
+        "proyecto03"
+        "proyecto04"
+        "proyecto05"
+        "footer";
+    }
+}
+
+@media (min-width: 600px){
+    .contenedor{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "header header"
+        "section foto02"
+        "misProyectos misProyectos"
+        "proyecto01 proyecto01"
+        "proyecto02 proyecto02"
+        "proyecto03 proyecto03"
+        "proyecto04 proyecto04"
+        "proyecto05 proyecto04"
+        "footer footer";
+    }
+}
+
+@media (min-width: 1200px){
+    .contenedor{
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "header header header"
+        "section section foto02"
+        "misProyectos misProyectos misProyectos"
+        "proyecto01 proyecto02 proyecto02"
+        "proyecto03 proyecto04 proyecto05"
+        "footer footer footer";
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        justify-items: stretch;
+        align-items: stretch;
+    }
+}
+
+/*about me*/
+
+.tituloAboutMe{
+    font-family: 'Poppins', sans-serif;
+    color: #514E4D;
+    font-style: normal;
+    Font-style: Italic;
+    Font-size: 20px;
+}

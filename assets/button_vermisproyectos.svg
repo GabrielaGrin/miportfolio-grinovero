@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="797" height="112" viewBox="0 0 797 112">
+  <g id="button_vermisproyectos" transform="translate(-90 -2415)">
+    <rect id="Rectángulo_8" data-name="Rectángulo 8" width="797" height="112" rx="10" transform="translate(90 2415)" fill="#eaeae2"/>
+    <g id="Grupo_6" data-name="Grupo 6" transform="translate(-35 -258)">
+      <text id="VER_MIS_PROYECTOS" data-name="VER MIS PROYECTOS" transform="translate(318 2742)" fill="#272525" font-size="35" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">VER MIS PROYECTOS</tspan></text>
+      <g id="arrows" transform="translate(690.705 2729.064) rotate(-45)">
+        <g id="Grupo_4" data-name="Grupo 4" transform="translate(0.099 0)">
+          <path id="Trazado_8" data-name="Trazado 8" d="M24.126,3.487a2.538,2.538,0,0,0-.43.037,2.624,2.624,0,0,0-2.1,2.636v9.886a5.069,5.069,0,0,0,.241,1.534l.266.837L4.495.812A2.624,2.624,0,0,0,1.136.445a2.535,2.535,0,0,0-.33,3.8L18.487,21.978l-.558-.2a5.07,5.07,0,0,0-1.724-.266H6.282a2.624,2.624,0,0,0-2.636,2.1A2.535,2.535,0,0,0,6.18,26.579H24.127a2.535,2.535,0,0,0,2.535-2.535V6.021A2.535,2.535,0,0,0,24.126,3.487Z" transform="translate(-0.099 0)" fill="#272525"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
