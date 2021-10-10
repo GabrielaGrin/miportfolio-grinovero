@@ -1,0 +1,261 @@
+
+@font-face {
+    font-family: 'BlackMango';
+    src: url(../assets/Fonts/BlackMango-Medium.ttf);
+}
+
+body{
+    margin: 5px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #FFFFFF;
+}
+
+.logo{
+        width: 200px;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 70px;
+        padding-right: 700px;
+}
+
+li{
+    display: inline-block;
+    padding: 40px;
+}
+
+a:hover:after {
+    left: 0;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #514E4D;
+    font-style: normal;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #514E4D;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #F5D6C6;
+    transition: left .8s;
+}
+
+.fotobyw{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "foto";
+    background-color: #ECDFDB;
+}
+
+.byw{
+    grid-area: "foto";
+}
+
+.textosobremi{
+    display: flexbox;
+    flex-direction: column;
+    background-color: #ECDFDB;
+    padding: 50px;
+}
+
+.unpoco{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.actualmente{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 5px;
+}
+
+.unpocomassobremi{
+    background-color: #FFFFFF;
+    margin:40px;
+    padding: 30px;
+}
+
+.uxdesigner{
+    float: right;
+    margin-top: -700px ;
+}
+
+.arrow{
+    float: right;
+    margin-top: -130px;
+    margin-right: 120px;
+}
+
+.somefun{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "some some"
+                        "fun funn"
+                        "facts factss";
+}
+
+.funTitle{
+    grid-area: some;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    margin: 50px;
+    padding-top: 50px;
+    color:#F5D6C6;
+    text-decoration-line: underline;
+}
+
+.funFacts{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "some some"
+                        "fun funn"
+                        "facts factss";
+    margin: 60px;
+    padding: 20px;
+}
+
+.fotos{
+    grid-area: fun;
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #707070;
+    margin: 20px;
+}
+
+.ed{
+    grid-area: funn;
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #707070;
+    margin: 20px;
+}
+
+.perros{
+    grid-area: facts;
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #707070;
+    margin: 20px;
+}
+
+.libros{
+    grid-area: factss;
+    display: flex;
+    flex-direction: row;
+    font-family:'Poppins', sans-serif;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #707070;
+    margin: 20px; 
+}
+
+.heart{
+    padding: 20px;
+}
+
+.textFun{
+    padding-left: 0px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "logolineal links followme quote tbrand nbrand";
+    margin: 50px;
+}
+
+.logolineal{
+    grid-area: logolineal;
+    padding-top: 120px;
+}
+
+.footer-links{
+    grid-area: links;
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    margin-left: 30px;
+}
+
+.followme{
+    grid-area: followme;
+    margin: 55px;
+}
+
+.quotefuture{
+    grid-area: quote;
+    margin: 40px;
+}
+
+.tbrand{
+    grid-area: tbrand;
+    margin: 40px;
+}
+
+.nbrand{
+    grid-area: nbrand;
+    margin: 40px;
+}
+
+.div-block-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:"city"
+                        "email";
+    background-color: #EBEBEB;
+}
+
+.city{
+    grid-area: city;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.email{
+    grid-area: email;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size: 15px;
+    margin-top: -15px;
+    padding-bottom: 10px;
+}

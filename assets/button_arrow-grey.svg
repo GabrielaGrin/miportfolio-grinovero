@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="114" height="114" viewBox="0 0 114 114">
+  <g id="button_arrow-grey" transform="translate(1441 -1524) rotate(90)">
+    <circle id="Elipse_1" data-name="Elipse 1" cx="57" cy="57" r="57" transform="translate(1524 1327)" fill="#878787"/>
+    <g id="arrows" transform="translate(1553.705 1384.062) rotate(-45)">
+      <g id="Grupo_4" data-name="Grupo 4" transform="translate(0.099 0)">
+        <path id="Trazado_8" data-name="Trazado 8" d="M34.915,5.053a3.677,3.677,0,0,0-.623.053,3.8,3.8,0,0,0-3.049,3.82V23.252a7.345,7.345,0,0,0,.349,2.222l.386,1.212L6.469,1.177A3.8,3.8,0,0,0,1.6.644a3.673,3.673,0,0,0-.477,5.51L26.744,31.846l-.808-.294a7.346,7.346,0,0,0-2.5-.386H9.058a3.8,3.8,0,0,0-3.82,3.049,3.673,3.673,0,0,0,3.673,4.3h26a3.673,3.673,0,0,0,3.673-3.673V8.725A3.673,3.673,0,0,0,34.915,5.053Z" transform="translate(-0.099 0)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
