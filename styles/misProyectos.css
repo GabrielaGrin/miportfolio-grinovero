@@ -1,0 +1,161 @@
+
+.proyectos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "hsbc ciudadana"
+                        "inmobiliaria cremolatti"
+                        "tbranding desafio"
+                        "bilezik oliva";
+    padding: 50px;
+    align-items: center;
+    background-color: #E7EFEB;
+
+}
+
+h3{
+    font-family:'Poppins', sans-serif;
+    font-size: 15px;
+    padding-top: -10px;
+}
+
+p{
+    font-family:'Poppins', sans-serif;
+    margin-top: -20px;
+}
+
+
+.hsbc{
+    grid-area: hsbc;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.ciudadana{
+    grid-area: ciudadana;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.inmobiliaria{
+    grid-area: inmobiliaria;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.cremolatti{
+    grid-area: cremolatti;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.tbranding{
+    grid-area: tbranding;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.desafio{
+    grid-area: desafio;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.bilezik{
+    grid-area: bilezik;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.oliva{
+    grid-area: oliva;
+    padding-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.png{
+    width: 70%;
+}
+
+.png:hover{
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(177, 177, 177, 0.2);
+}
+
+.div-block-container{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:"city"
+                        "email";
+    background-color: #EBEBEB;
+}
+
+.city{
+    grid-area: city;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.email{
+    grid-area: email;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+    font-size: 15px;
+    margin-top: -15px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 370px){
+    .proyectos{
+        display: grid;
+        grid-column: auto;
+        grid-template-rows:  auto auto auto auto auto auto auto auto;
+        grid-template-areas: "hsbc"
+                            "ciudadana"
+                            "inmobiliaria"
+                            "cremolatti"
+                            "tbranding"
+                            "desafio"
+                            "bilezik"
+                            "oliva"
+    }
+    .hsbc{
+        grid-area: hsbc;
+    }
+    .ciudadana{
+        grid-area: ciudadana;
+    }
+    .inmobiliaria{
+        grid-area: inmobiliaria;
+    }
+    .cremolatti{
+        grid-area: cremolatti;
+    }
+    .tbranding{
+        grid-area: tbranding;
+    }
+    .desafio{
+        grid-area: desafio;
+    }
+    .desafio{
+        grid-area: desafio;
+    }
+    .bilezik{
+        grid-area: bilezik;
+    }
+    .oliva{
+        grid-area: oliva;
+    }
+}
