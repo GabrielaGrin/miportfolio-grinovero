@@ -54,12 +54,104 @@ p{
 
 button{
     grid-area: button;
-    margin: 100px;
     padding: 15px;
-    margin-left: 1000px;
     font-family: 'Poppins', sans-serif;
+    width: 300px;
+    margin-left: 1150px;
 }
 
 body{
     background: url(../assets/backgroundTaza.png) no-repeat center top;
+}
+
+@media (max-width: 320px){
+    body{
+        width: 50%;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "logo"
+        "404"
+        "error"
+        "texto"
+        "boton";
+    }
+    .logo{
+        grid-area: logo;
+    }
+    h1{
+        grid-area: 404;
+    }
+    h2{
+        grid-area: erro;
+    }
+    p{
+        grid-area: texto;
+    }
+    button{
+        grid-area: boton;
+    }
+}
+
+@media (max-width: 600px){
+    body{
+        width: 50%;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "logo"
+        "404"
+        "error"
+        "texto"
+        "boton";
+    }
+    .logo{
+        grid-area: logo;
+    }
+    h1{
+        grid-area: 404;
+    }
+    h2{
+        grid-area: erro;
+    }
+    p{
+        grid-area: texto;
+    }
+    button{
+        grid-area: boton;
+    }
+}
+@media (max-width: 1200px){
+    body{
+        width: 50%;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "logo"
+        "404"
+        "error"
+        "texto"
+        "boton";
+    }
+    .logo{
+        grid-area: logo;
+    }
+    h1{
+        grid-area: 404;
+    }
+    h2{
+        grid-area: erro;
+    }
+    p{
+        grid-area: texto;
+    }
+    button{
+        grid-area: boton;
+    }
 }
