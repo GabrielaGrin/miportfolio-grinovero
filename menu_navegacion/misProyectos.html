@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mis Proyectos</title>
     <link rel="stylesheet" type="text/css" href="../styles/misProyectos.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" media="screen" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-widht, initial-scale=1.0"/>
 </head>
@@ -13,20 +14,21 @@
 <body>
     <div class="header">
         <!--ponerlink-->
-        <img class="logo" src= "../assets/logoKyaradg.svg" alt="logokyaradg" href="">
+        <a href= "/index.html"  alt="logokyaradg">
+            <img class="logo" src="../assets/logoKyaradg.svg">
+        </a>
         <!--lista menu-->
-        <ul>
-            <li><a href="menu_navegacion/home.html">Home</a></li>
-            <li><a href="menu_navegacion/sobreMi.html">Sobre Mi</a></li>
-            <li><a href="menu_navegacion/misProyectos.html">Mis Proyectos</a></li>
-            <li><a href="menu_navegacion/contacto.html">Contacto</a></li>
+        <ul class="navegacion">
+            <li class="liclass"><a class="links" href="/index.html">Home</a></li>
+            <li class="liclass"><a class="links"href="/menu_navegacion/sobreMi.html">Sobre Mi</a></li>
+            <li class="liclass"><a class="links"href="/menu_navegacion/misProyectos.html">Mis Proyectos</a></li>
+            <li class="liclass"><a class="links"href="/menu_navegacion/contacto.html">Contacto</a></li>
         </ul>
     </div>
 
     <div class="proyectos">
-
         <div class="hsbc">
-            <img src="../assets/Proyecto App HSBC.png">
+            <img class="png" src="../assets/Proyecto App HSBC.png">
             <h3>
                 CASE STUDY:  APP HSBC 
             </h3>
@@ -36,7 +38,7 @@
         </div>
     
         <div class="ciudadana">
-            <img src="../assets/Proyecto App Ciudadana.png">
+            <img class="png" src="../assets/Proyecto App Ciudadana.png">
             <h3>
                 CASE STUDY:  APP CIUDADANA  
             </h3>
@@ -46,7 +48,7 @@
         </div>
     
         <div class="inmobiliaria">
-            <img src="../assets/Branding inmobiliaria.png">
+            <img class="png" src="../assets/Branding inmobiliaria.png">
             <h3>
                 GONZALEZ & BERCHIN INMOBILIARIA
             </h3>
@@ -56,7 +58,7 @@
         </div>
     
         <div class="cremolatti">
-            <img src="../assets/Proyecto App cremolatti.png">
+            <img class="png" src="../assets/Proyecto App cremolatti.png">
             <h3>
                 CASE STUDY:  APP CREMOLATTI
             </h3>
@@ -66,7 +68,7 @@
         </div>
     
         <div class="tbranding">
-            <img src="../assets/Branding T arquitectura.png">
+            <img class="png" src="../assets/Branding T arquitectura.png">
             <h3>
                 T. ARQUITECTURA
             </h3>
@@ -76,7 +78,7 @@
         </div>
     
         <div class="desafio">
-            <img src="../assets/Desafio Ux.png">
+            <img class="png" src="../assets/Desafio Ux.png">
             <h3>
                 CASE STUDY:  SHOPPING CART
             </h3>
@@ -86,7 +88,7 @@
         </div>
     
         <div class="bilezik">
-            <img src="../assets/Branding Bilezik.png">
+            <img class="png" src="../assets/Branding Bilezik.png">
             <h3>
                 BILEZIK PULSERAS
             </h3>
@@ -96,7 +98,7 @@
         </div>
     
         <div class="oliva">
-            <img src="../assets/Branding Oliva.png">
+            <img class="png" src="../assets/Branding Oliva.png">
             <h3>
                 OLIVA ALMACÉN SALUDABLE
             </h3>
@@ -106,13 +108,9 @@
         </div>
     </div>
     
-        <div class="div-block-container">
-            <p class="city">San Benito, Entre Rios, Argentina</p>
-            <p class="email">kyaradg@gmail.com</p>
-        </div>
-
+    <div class="div-block-container">
+        <p class="city">San Benito, Entre Rios, Argentina</p>
+        <p class="email">kyaradg@gmail.com</p>
     </div>
-    
-
 </body>
 </html>
