@@ -120,9 +120,11 @@ body{
     }
     p{
         grid-area: texto;
+        padding-left: 700px;
     }
     button{
         grid-area: boton;
+        margin-left: 700px;
     }
 }
 @media (max-width: 1200px){
@@ -150,8 +152,10 @@ body{
     }
     p{
         grid-area: texto;
+        padding-left: 700px;
     }
     button{
         grid-area: boton;
+        margin-left: 700px;
     }
 }
