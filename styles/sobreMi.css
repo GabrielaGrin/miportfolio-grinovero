@@ -9,6 +9,7 @@
 
 .byw{
     grid-area: "foto";
+    width: 100%;
 }
 
 .textosobremi{
@@ -200,4 +201,85 @@
     font-size: 15px;
     margin-top: -15px;
     padding-bottom: 10px;
+}
+
+@media (max-width: 360px){
+    .fotobyw{
+        width: 110%
+    }
+    .textosobremi{
+        width: 100%;
+    }
+    .actualmente{
+        width: auto;
+    }
+    .uxdesigner{
+        visibility: hidden;
+    }
+    .funTitle{
+        font-size: 40px;
+    }
+    .funFacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .fotos{
+        width: 100%;
+    }
+    .ed{
+        width: 100%;
+    }
+    .perros{
+        width: 100%;
+    }
+    .libros{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+    .funTitle{
+        font-size: 40px;
+    }
+    .funFacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .fotos{
+        width: 100%;
+    }
+    .ed{
+        width: 100%;
+    }
+    .perros{
+        width: 100%;
+    }
+    .libros{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px){
+    .funTitle{
+        font-size: 40px;
+    }
+    .funFacts{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .fotos{
+        width: 100%;
+    }
+    .ed{
+        width: 100%;
+    }
+    .perros{
+        width: 100%;
+    }
+    .libros{
+        width: 100%;
+    }
 }

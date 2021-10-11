@@ -28,41 +28,57 @@ p{
 .hsbc{
     grid-area: hsbc;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .ciudadana{
     grid-area: ciudadana;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .inmobiliaria{
     grid-area: inmobiliaria;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .cremolatti{
     grid-area: cremolatti;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .tbranding{
     grid-area: tbranding;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .desafio{
     grid-area: desafio;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .bilezik{
     grid-area: bilezik;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .oliva{
     grid-area: oliva;
     padding-top: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .png{

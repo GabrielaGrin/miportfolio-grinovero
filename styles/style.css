@@ -78,7 +78,6 @@ body{
     grid-template-rows: auto auto;
     grid-template-areas:"title title"
                         "text quote";
-    grid-column-gap: 5px;
     grid-row-gap: 5px;
     justify-items: stretch;
     align-items: stretch; 
@@ -118,7 +117,6 @@ body{
                         "proyectos proyectos imagen"
                         "text text imagen"
                         "boton boton imagen";
-    grid-column-gap: 20px;
     background-color: #C4CCC8;
 }
 
@@ -184,7 +182,7 @@ body{
 
 .logolineal{
     grid-area: logolineal;
-    padding-top: 120px;
+    padding-top: 140px;
 }
 
 .footer-links{

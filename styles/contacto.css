@@ -8,7 +8,8 @@
                         "sueños formpersonal"
                         "texto formpersonal"
                         "tambien formproyecto"
-                        "redes formproyecto"
+                        "redes formproyecto";
+    margin-bottom: 40px;
 }
 
 .hello{
@@ -130,4 +131,195 @@
     margin-bottom: 10px;
     padding: 5px;
     padding-right: 500px;
+}
+
+@media (max-width: 360px){
+    .formcontent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "say textosueños textoescribime aca redes";
+    }
+    .say{
+        grid-area: say;
+    }
+    .textoSueños{
+        grid-area: textosueños;
+    }
+    .textoEscribime{
+        grid-area: textoescribime;
+    }
+    .aca{
+        grid-area: aca;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .formcontent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "say textosueños textoescribime aca redes datos formPersonal sobreElProyecto formProyecto";
+    }
+    .say{
+        grid-area: say;
+    }
+    .textoSueños{
+        grid-area: textosueños;
+    }
+    .textoEscribime{
+        grid-area: textoescribime;
+    }
+    .aca{
+        grid-area: aca;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .datos{
+        grid-area: datos;
+    }
+    .formPersonal{
+        grid-area: formPersonal;
+    }
+    .sobreElProyecto{
+        grid-area: sobreElProyecto;
+    }
+    .formProyecto{
+        grid-area: formProyecto;
+    }
+}
+@media (max-width: 600px){
+    .formcontent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "say textosueños textoescribime aca redes";
+    }
+    .say{
+        grid-area: say;
+    }
+    .textoSueños{
+        grid-area: textosueños;
+    }
+    .textoEscribime{
+        grid-area: textoescribime;
+    }
+    .aca{
+        grid-area: aca;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .formcontent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "say textosueños textoescribime aca redes datos formPersonal sobreElProyecto formProyecto";
+    }
+    .say{
+        grid-area: say;
+    }
+    .textoSueños{
+        grid-area: textosueños;
+    }
+    .textoEscribime{
+        grid-area: textoescribime;
+    }
+    .aca{
+        grid-area: aca;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .datos{
+        grid-area: datos;
+    }
+    .formPersonal{
+        grid-area: formPersonal;
+    }
+    .sobreElProyecto{
+        grid-area: sobreElProyecto;
+    }
+    .formProyecto{
+        grid-area: formProyecto;
+    }
+}
+@media (max-width: 1200px){
+    .formcontent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "say textosueños textoescribime aca redes";
+    }
+    .say{
+        grid-area: say;
+    }
+    .textoSueños{
+        grid-area: textosueños;
+    }
+    .textoEscribime{
+        grid-area: textoescribime;
+    }
+    .aca{
+        grid-area: aca;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .formcontent{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: "say"
+                            "textosueños"
+                            "textoescribime"
+                            "aca"
+                            "redes"
+                            "datos"
+                            "formPersonal"
+                            "sobreElProyecto"
+                            "formProyecto"
+    }
+    .say{
+        grid-area: say;
+    }
+    .textoSueños{
+        grid-area: textosueños;
+        font-size: 20px;
+    }
+    .textoEscribime{
+        grid-area: textoescribime;
+        font-size: 10px;
+    }
+    .aca{
+        grid-area: aca;
+    }
+    .redes{
+        grid-area: redes;
+    }
+    .datos{
+        grid-area: datos;
+    }
+    .formPersonal{
+        grid-area: formPersonal;
+    }
+    .sobreElProyecto{
+        grid-area: sobreElProyecto;
+    }
+    .formProyecto{
+        grid-area: formProyecto;
+    }
+    form{
+        width: 100%;
+    }
+    .datos{
+        font-size: 20px;
+    }
+    input{
+        width: 30%;
+    }
+    label{
+        width: fit-content;
+    }
 }
