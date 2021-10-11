@@ -10,12 +10,54 @@ body{
 }
 
 .header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "logo link link link link";
     background: #FFFFFF;
+}
+
+.logo{
+    grid-area: logo;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 300px;
+}
+
+.classnavegacion{
+    grid-area: link;
+}
+
+.liclass{
+    display: inline-block;
+    padding: 40px;
+}
+
+.links:hover:after {
+    left: 0;
+}
+
+.links{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #514E4D;
+    font-style: normal;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #514E4D;
+}
+
+.links:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: #F5D6C6;
+    transition: left .8s;
 }
 
 .hero{
@@ -27,6 +69,7 @@ body{
 
 .banner{
     grid-area: banner;
+    width: 100%;
 }
 
 .presentation{
@@ -63,51 +106,8 @@ body{
 
 .quote{
     grid-area: quote;
-    width: 300px;
-    height: 300px;
-    padding-left: 180px;
-    margin-top: -30px;
-    margin-bottom: 20px;
-}
-
-.logo{
-    width: 200px;
-    height: 100px;
-    padding-top: 20px;
-    padding-left: 70px;
-    padding-right: 700px;
-}
-
-li{
-    display: inline-block;
-    padding: 40px;
-}
-
-a:hover:after {
-    left: 0;
-}
-
-a{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #514E4D;
-    font-style: normal;
-    font-size: 18px;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    color: #514E4D;
-}
-
-a:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -100%;
     width: 100%;
-    height: 2px;
-    background: #F5D6C6;
-    transition: left .8s;
+    align-items: stretch;
 }
 
 .misproyectos{
@@ -145,7 +145,7 @@ a:after {
 .text-misProyectos{
     grid-area: text;
     font-family:'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     color:#FFFFFF;
     margin-top: 40px;
     margin-bottom: 50px;
@@ -153,25 +153,32 @@ a:after {
 
 .quoteimage{
     grid-area: imagen;
-    width: 962px;   
-    height: 962px;
+    width: 100%;
 }
 
 .btn {
     grid-area: boton;
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 50px;
+    text-decoration: none;
+    background-color: #EAEAE2;
+    color: #313131;
     padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    box-shadow: 0 4px 8px 0 rgba(177, 177, 177, 0.2), 0 6px 20px 0 rgba(177, 177, 177, 0.2);
 }
 
 .footer{
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto ;
     grid-template-rows: auto;
-    grid-template-areas: "logolineal links followme quote tbrand nbrand";
+    grid-template-areas: "logolineal links followme quote tbrand";
     margin: 50px;
 }
 
@@ -191,22 +198,21 @@ a:after {
 .followme{
     grid-area: followme;
     margin: 55px;
+    width: 70%;
 }
 
 .quotefuture{
     grid-area: quote;
     margin: 40px;
+    width: 100%;
 }
 
 .tbrand{
     grid-area: tbrand;
     margin: 40px;
+    width: 100%;
 }
 
-.nbrand{
-    grid-area: nbrand;
-    margin: 40px;
-}
 
 .div-block-container{
     display: grid;
@@ -236,64 +242,227 @@ a:after {
     padding-bottom: 10px;
 }
 
-
-
-@media (min-width: 320px){
-    .contenedor{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-        grid-template-areas: "header"
-        "section"
-        "foto02"
-        "misProyectos"
-        "proyecto01"
-        "proyecto02"
-        "proyecto03"
-        "proyecto04"
-        "proyecto05"
-        "footer";
-    }
-}
-
-@media (min-width: 600px){
-    .contenedor{
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto auto auto auto auto auto auto auto;
-        grid-template-areas: "header header"
-        "section foto02"
-        "misProyectos misProyectos"
-        "proyecto01 proyecto01"
-        "proyecto02 proyecto02"
-        "proyecto03 proyecto03"
-        "proyecto04 proyecto04"
-        "proyecto05 proyecto04"
-        "footer footer";
-    }
-}
-
-@media (min-width: 1200px){
-    .contenedor{
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: "header header header"
-        "section section foto02"
-        "misProyectos misProyectos misProyectos"
-        "proyecto01 proyecto02 proyecto02"
-        "proyecto03 proyecto04 proyecto05"
-        "footer footer footer";
-        grid-column-gap: 5px;
-        grid-row-gap: 5px;
-        justify-items: stretch;
-        align-items: stretch;
-    }
-}
-
-/*about me*/
-
-.tituloAboutMe{
+.linksResponsive{
+    text-decoration: none;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
-    color: #514E4D;
-    font-style: normal;
-    Font-style: Italic;
-    Font-size: 20px;
+    color: rgb(63, 63, 63);
+    padding: 10px;
+}
+
+
+@media (max-width: 320px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .logo{
+        width: 100px;
+        margin-left: 120px;
+    }
+    .banner{
+        width: 420%;
+    }
+    .presentation{
+        background-color: #F6F6F6;
+    }
+    .quote{
+        visibility: hidden;
+    }
+    .quoteimage{
+        visibility: hidden;
+    }
+    .misproyectos{
+        width: 200%;
+    }
+    .text-block{
+        font-size: 50px;
+        padding: -10px;
+    }
+    .text-serif{
+        font-size: 50px;
+    }
+    .text-misProyectos{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: x-small;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .quotefuture{
+        margin-left: 100px;
+    }
+    .tbrand{
+        margin-left: 100px;
+    }
+    .nbrand{
+        margin-left: 100px;
+    }
+    .logolineal{
+        width: 70px;
+        margin-left: 100px;
+        margin-bottom: 0px;
+    }
+
+    .div-block-container{
+        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 600px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .logo{
+        width: 100px;
+        margin-left: 180px;
+    }
+    .banner{
+        width: 420%;
+    }
+    .presentation{
+        background-color: #F6F6F6;
+    }
+    .quote{
+        visibility: hidden;
+    }
+    .quoteimage{
+        visibility: hidden;
+    }
+    .misproyectos{
+        width: 200%;
+    }
+    .text-block{
+        font-size: 50px;
+        padding: -10px;
+    }
+    .text-serif{
+        font-size: 50px;
+    }
+    .text-misProyectos{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: x-small;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .quotefuture{
+        margin-left: 100px;
+    }
+    .tbrand{
+        margin-left: 100px;
+    }
+    .nbrand{
+        margin-left: 100px;
+    }
+    .logolineal{
+        width: 70px;
+        margin-left: 190px;
+        margin-bottom: 0px;
+    }
+
+    .div-block-container{
+        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 1200px){
+    .header{
+        display: flex;
+        flex-direction: column;
+    }
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .logo{
+        width: 100px;
+        margin-left: 180px;
+    }
+    .banner{
+        width: 420%;
+    }
+    .presentation{
+        background-color: #F6F6F6;
+    }
+    .quote{
+        visibility: hidden;
+    }
+    .quoteimage{
+        visibility: hidden;
+    }
+    .misproyectos{
+        width: 200%;
+    }
+    .text-block{
+        font-size: 50px;
+        padding: -10px;
+    }
+    .text-serif{
+        font-size: 50px;
+    }
+    .text-misProyectos{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: x-small;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .quotefuture{
+        margin-left: 100px;
+    }
+    .tbrand{
+        margin-left: 100px;
+    }
+    .nbrand{
+        margin-left: 100px;
+    }
+    .logolineal{
+        width: 70px;
+        margin-left: 190px;
+        margin-bottom: 0px;
+    }
+
+    .div-block-container{
+        padding: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }

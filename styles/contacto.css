@@ -1,61 +1,4 @@
 
-@font-face {
-    font-family: 'BlackMango';
-    src: url(../assets/Fonts/BlackMango-Medium.ttf);
-}
-
-body{
-    margin: 5px;
-}
-
-.header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    background: #FFFFFF;
-}
-
-.logo{
-    width: 200px;
-    height: 100px;
-    padding-top: 20px;
-    padding-left: 70px;
-    padding-right: 700px;
-}
-
-li{
-    display: inline-block;
-    padding: 40px;
-}
-
-a:hover:after{
-    left: 0;
-}
-
-a{
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    color: #514E4D;
-    font-style: normal;
-    font-size: 18px;
-    position: relative;
-    overflow: hidden;
-    display: inline-block;
-    color: #514E4D;
-}
-
-a:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: #F5D6C6;
-    transition: left .8s;
-}
 
 .formcontent{
     display: grid;
@@ -170,15 +113,15 @@ a:after {
     margin-left: 480px;
 }
 
-img{
+.logos{
     padding-right: 30px;
     transition: transform .2s;
     width: 48px;
     height: 48px;
 }
 
-img:hover{
-    ms-transform: scale(1.5); 
+.logos:hover{
+    -ms-transform: scale(1.5); 
     -webkit-transform: scale(1.5);
     transform: scale(1.5); 
 }
